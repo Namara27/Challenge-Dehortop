@@ -1,5 +1,5 @@
 #wrapper {
-    background-color: red;
+    /*background-color: red;*/
     margin: auto;
     width: 1000px;
     text-align: center;
@@ -28,4 +28,15 @@ h4{
     float: left;
     margin: 10px 10px 10px 30px;
     font-family: 'Roboto', sans-serif;
+}
+
+table.overzicht {
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin: auto;
+}
+
+table.overzicht td, th {
+    border: 1px solid black;
+    padding: 5px 30px;
 }
