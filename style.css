@@ -1,0 +1,31 @@
+#wrapper {
+    background-color: red;
+    margin: auto;
+    width: 1000px;
+    text-align: center;
+}
+
+nav {
+    padding: 10px;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+}
+
+footer {
+    text-align: center;
+}
+
+img {
+    padding: 10px;
+    height: 150px;
+}
+
+h4{
+    float: left;
+    margin: 10px 10px 10px 30px;
+    font-family: 'Roboto', sans-serif;
+}
