@@ -15,6 +15,10 @@ nav a {
     font-family: 'Orbitron', sans-serif;
 }
 
+#overzichtHouder {
+    margin-top: 20px;
+}
+
 footer {
     text-align: center;
 }
@@ -24,7 +28,7 @@ img {
     height: 150px;
 }
 
-h4{
+h4 {
     float: left;
     margin: 10px 10px 10px 30px;
     font-family: 'Roboto', sans-serif;
@@ -39,4 +43,11 @@ table.overzicht {
 table.overzicht td, th {
     border: 1px solid black;
     padding: 5px 30px;
+}
+
+a#code, a#plaats, a#land, a#werelddeel {
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
