@@ -17,7 +17,7 @@ require_once('databaseConnReizen.php');
         <nav>
             <a href="index.html">Home</a> |
             <a href="bestemmingen.php">Bestemmingen</a> |
-            <a href="">Reizen</a> |
+            <a href="reizen.php">Reizen</a> |
             <a href="registreer.php">Registreer</a> |
             <a href="login.php">Inloggen</a>
         </nav>
