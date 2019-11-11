@@ -19,11 +19,13 @@ require_once('databaseConnReizen.php');
             <a href="bestemmingen.php">Bestemmingen</a> |
             <a href="">Reizen</a> |
             <a href="registreer.php">Registreer</a> |
-            <a href="">Inloggen</a>
+            <a href="login.php">Inloggen</a>
         </nav>
     </header>
-
+    <h2>Registreren</h2>
     <form action="registreer.php" method="post" enctype="multipart/form-data">
+        <p>Gebruikersnaam</p>
+        <input type="text" name="gebruikersnaam">
         <p>Voorletters</p>
         <input type="text" name="voorletters">
         <p>Achternaam</p>
@@ -36,6 +38,8 @@ require_once('databaseConnReizen.php');
         <input type="text" name="plaats">
         <p>Telefoonnummer</p>
         <input type="number" name="telefoonnummer">
+        <p>Wachtwoord</p>
+        <input type="password" name="wachtwoord">
         <p></p>
         <input type="submit" name="submit" value="Registreren">
 

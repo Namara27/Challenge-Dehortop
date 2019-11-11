@@ -1,3 +1,7 @@
+<?php
+require_once('databaseConnReizen.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,14 +22,17 @@
             <a href="login.php">Inloggen</a>
         </nav>
     </header>
-
-    <img src="img/trein.jpg" alt="trein">
-    <img src="img/vliegtuig.jpg" alt="vliegtuig">
-    <img src="img/bus.jpg" alt="bus">
-
-    <footer>
-        <p>&copy; Dehortop 2019</p>
-    </footer>
+    <h2>Inloggen</h2>
+    <form action="login.php" method="post" enctype="multipart/form-data">
+        <p>Gebruikersnaam</p>
+        <input type="text" name="gebruikersnaamInlog">
+        <p>Wachtwoord</p>
+        <input type="password" name="wachtwoordInlog">
+        <p></p>
+        <input type="submit" name="login" value="Inloggen">
+        <footer>
+            <p>&copy; Dehortop 2019</p>
+        </footer>
 </div>
 </body>
 </html>

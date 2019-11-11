@@ -19,7 +19,7 @@ require_once('databaseConnReizen.php');
             <a href="bestemmingen.php">Bestemmingen</a> |
             <a href="">Reizen</a> |
             <a href="registreer.php">Registreer</a> |
-            <a href="">Inloggen</a>
+            <a href="login.php">Inloggen</a>
         </nav>
     </header>
     <form action="bestemmingen.php" method="get" enctype="multipart/form-data">

@@ -1,4 +1,5 @@
 <?php
+
 try {
     //Connect to database
     $servername = "127.0.0.1";
@@ -8,7 +9,7 @@ try {
     $conn = new PDO("mysql:host=$servername;dbname=2119173_namara_kerkenaar;port=3306", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    //Database klant toevoegen
+    //Registreren
     if (isset($_POST["submit"])) {
         $voorletters = $_POST['voorletters'];
         $achternaam = $_POST['achternaam'];
@@ -21,6 +22,25 @@ try {
         echo "Account aangemaakt!";
     }
 
+    //Inloggen
+    if (isset($_POST['login'])
+        && isset ($_POST['gebruikersnaamInlog'])
+        && isset ($_POST["wachtwoordInlog"])) {
+
+        $gebruikersnaam = $_POST['gebruikersnaamInlog'];
+        $wachtwoord = $_POST['wachtwoordInlog'];
+
+        $query = "SELECT * FROM klanten WHERE gebruikersnaam='$gebruikersnaam' AND wachtwoord='$wachtwoord'";
+
+        $count = $conn->query($query);
+        if($count->rowCount() > 0) {
+            header('location: index.html');
+            die();
+        }
+        else {
+            echo 'Onjuist wachtwoord of gebruikersnaam';
+        }
+    }
 
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
